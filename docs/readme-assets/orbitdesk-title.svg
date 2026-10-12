@@ -1,11 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 247" role="img" aria-labelledby="title desc">
-<title id="title">ORBITDESK Help Desk and Ticketing System</title>
-<desc id="desc">Neon orbit, twinkling stars, and the OrbitDesk title.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050b1d"/><stop offset=".55" stop-color="#10143c"/><stop offset="1" stop-color="#210e42"/></linearGradient><linearGradient id="glow"><stop stop-color="#58d7ff"/><stop offset=".5" stop-color="#9a7cff"/><stop offset="1" stop-color="#ff71dc"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="3"/></filter></defs>
-<rect width="1200" height="247" rx="22" fill="url(#bg)"/>
-<g fill="none" stroke="url(#glow)" stroke-width="2" opacity=".9"><ellipse cx="165" cy="115" rx="82" ry="27" transform="rotate(-28 165 115)"><animateTransform attributeName="transform" type="rotate" from="-28 165 115" to="332 165 115" dur="16s" repeatCount="indefinite"/></ellipse><ellipse cx="165" cy="115" rx="82" ry="27" transform="rotate(40 165 115)"/></g>
-<circle cx="165" cy="115" r="27" fill="url(#glow)"/><circle cx="165" cy="115" r="39" fill="#7d67ff" opacity=".2" filter="url(#soft)"/>
-<g fill="#fff"><circle cx="57" cy="43" r="2"/><circle cx="274" cy="62" r="2"/><circle cx="1085" cy="47" r="2"/><circle cx="1135" cy="184" r="2"/><circle cx="1010" cy="207" r="1.8"/></g>
-<g fill="#61dcff"><path d="M300 34l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"><animate attributeName="opacity" values=".35;1;.35" dur="2.3s" repeatCount="indefinite"/></path><path d="M1050 115l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"><animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/></path></g>
-<g fill="#a69aff"><circle cx="990" cy="73" r="3"><animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/></circle><circle cx="335" cy="197" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="2.8s" repeatCount="indefinite"/></circle></g>
-<text x="315" y="111" font-family="Segoe UI,Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="2" fill="url(#glow)">ORBITDESK</text><text x="318" y="155" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#fff">HELP DESK &amp; TICKETING SYSTEM</text><text x="320" y="194" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#b9dfff">Simplify support. Streamline communication. Deliver better experiences.</text><path d="M315 214 C500 230 760 228 937 205" fill="none" stroke="url(#glow)" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 10"><animate attributeName="stroke-dashoffset" values="0;-68" dur="4s" repeatCount="indefinite"/></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">ORBITDESK · Help Desk and Ticketing System</title>
+<desc id="desc">A vivid animated space banner with rotating planetary rings, a moving satellite, a rocket with a pulsing exhaust, shooting stars, and luminous ORBITDESK lettering.</desc>
+<defs>
+  <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050817"/>
+    <stop offset=".48" stop-color="#10163b"/>
+    <stop offset="1" stop-color="#270e42"/>
+  </linearGradient>
+  <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6ee7ff"/>
+    <stop offset=".34" stop-color="#91a7ff"/>
+    <stop offset=".68" stop-color="#bd8aff"/>
+    <stop offset="1" stop-color="#ff8de8"/>
+    <animate attributeName="x1" values="0;1;0" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="1;2;1" dur="7s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#4eeaff"/>
+    <stop offset=".48" stop-color="#7c6eff"/>
+    <stop offset="1" stop-color="#f36ee8"/>
+  </linearGradient>
+  <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#45dcff"/>
+    <stop offset=".55" stop-color="#5968f2"/>
+    <stop offset="1" stop-color="#b24ff4"/>
+  </linearGradient>
+  <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#fff6a2"/>
+    <stop offset=".45" stop-color="#ff9b54"/>
+    <stop offset="1" stop-color="#ff55c8" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="nebula">
+    <stop stop-color="#5e4bff" stop-opacity=".34"/>
+    <stop offset="1" stop-color="#5e4bff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="7"/>
+  </filter>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.3"/>
+  </filter>
+  <clipPath id="clip"><rect width="1200" height="280" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="1200" height="280" fill="url(#space)"/>
+  <ellipse cx="420" cy="60" rx="360" ry="170" fill="url(#nebula)"/>
+  <ellipse cx="1000" cy="230" rx="280" ry="160" fill="url(#nebula)"/>
+  <path d="M0 233 C220 209 300 272 510 237 S900 213 1200 244" fill="none" stroke="#293d88" stroke-opacity=".4" stroke-width="1"/>
+  <path d="M0 246 C200 222 345 285 540 247 S933 224 1200 257" fill="none" stroke="#5b38a6" stroke-opacity=".35" stroke-width="1"/>
+  <!-- Star field -->
+  <g fill="#e6f7ff">
+    <circle cx="46" cy="44" r="1.6"/><circle cx="268" cy="32" r="1.3"/><circle cx="291" cy="214" r="1.5"/>
+    <circle cx="874" cy="39" r="1.4"/><circle cx="930" cy="233" r="1.4"/><circle cx="1171" cy="50" r="1.5"/>
+    <circle cx="1144" cy="214" r="1.5"/><circle cx="719" cy="241" r="1.3"/><circle cx="540" cy="31" r="1.2"/>
+    <circle cx="61" cy="213" r="1.4"/><circle cx="821" cy="214" r="1.4"/><circle cx="378" cy="250" r="1.2"/>
+  </g>
+  <g fill="#6ee7ff">
+    <path d="M90 73l3 8 8 3-8 3-3 8-3-8-8-3 8-3z">
+      <animate attributeName="opacity" values=".25;1;.25" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 90 84;45 90 84;0 90 84" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M850 79l2 6 6 2-6 2-2 6-2-6-6-2 6-2z">
+      <animate attributeName="opacity" values="1;.3;1" dur="1.7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#ffb7f0">
+    <path d="M287 100l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"><animate attributeName="opacity" values=".3;1;.3" dur="2.4s" repeatCount="indefinite"/></path>
+    <path d="M920 56l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"><animate attributeName="opacity" values=".2;1;.2" dur="2.1s" repeatCount="indefinite"/></path>
+  </g>
+  <!-- Planet with animated orbital rings -->
+  <circle cx="153" cy="137" r="52" fill="#5e5aff" opacity=".2" filter="url(#glow)"/>
+  <circle cx="153" cy="137" r="36" fill="url(#planet)"/>
+  <path d="M128 118 Q151 97 174 113 M125 140 Q150 122 180 137 M136 161 Q157 147 177 157" fill="none" stroke="#b1f8ff" stroke-opacity=".44" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="153" cy="137" rx="72" ry="24" fill="none" stroke="url(#ring)" stroke-width="5" transform="rotate(-25 153 137)" stroke-linecap="round"/>
+  <ellipse cx="153" cy="137" rx="72" ry="24" fill="none" stroke="#d9c7ff" stroke-opacity=".58" stroke-width="1.4" transform="rotate(-25 153 137)">
+    <animateTransform attributeName="transform" type="rotate" from="-25 153 137" to="335 153 137" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+  <circle r="5" fill="#fff" filter="url(#softGlow)">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M83 120 A72 24 -25 1 1 223 154 A72 24 -25 1 1 83 120"/>
+  </circle>
+  <!-- Kicker pill -->
+  <rect x="306" y="31" width="292" height="27" rx="13.5" fill="#151e45" stroke="#4a5aab" stroke-opacity=".8"/>
+  <circle cx="324" cy="44.5" r="4" fill="#5df0ff">
+    <animate attributeName="r" values="3;5;3" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="338" y="49" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.8" fill="#c8d8ff">SUPPORT, NOW IN ORBIT</text>
+  <!-- Main title -->
+  <text x="300" y="124" font-family="Segoe UI,Arial,sans-serif" font-size="69" font-weight="900" letter-spacing="1.2" fill="#5b57ff" opacity=".46" filter="url(#softGlow)">ORBITDESK</text>
+  <text x="300" y="119" font-family="Segoe UI,Arial,sans-serif" font-size="69" font-weight="900" letter-spacing="1.2" fill="url(#titleGradient)">ORBITDESK</text>
+  <path d="M304 132 Q535 145 770 130" fill="none" stroke="url(#ring)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="72 390">
+    <animate attributeName="stroke-dashoffset" values="460;0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <text x="307" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="750" letter-spacing=".8" fill="#ffffff">HELP DESK &amp; TICKETING SYSTEM</text>
+  <text x="308" y="192" font-family="Segoe UI,Arial,sans-serif" font-size="17" fill="#b8d9ff">Simplify support. Streamline communication. Deliver better experiences.</text>
+  <!-- Feature chips -->
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="600">
+    <rect x="307" y="211" width="142" height="28" rx="14" fill="#111d43" stroke="#5267c7" stroke-opacity=".8"/>
+    <text x="378" y="229" text-anchor="middle" fill="#d8eaff">✦ Ticket tracking</text>
+    <rect x="460" y="211" width="136" height="28" rx="14" fill="#111d43" stroke="#5267c7" stroke-opacity=".8"/>
+    <text x="528" y="229" text-anchor="middle" fill="#d8eaff">◈ Role-based access</text>
+    <rect x="607" y="211" width="126" height="28" rx="14" fill="#111d43" stroke="#5267c7" stroke-opacity=".8"/>
+    <text x="670" y="229" text-anchor="middle" fill="#d8eaff">↗ Live workflow</text>
+  </g>
+  <!-- Rocket, angled into flight -->
+  <g transform="translate(1041 128) rotate(38)">
+    <ellipse cx="0" cy="27" rx="17" ry="29" fill="#ff65d9" opacity=".18" filter="url(#glow)"/>
+    <path d="M0 39 C-9 26 -12 7 -9 -9 C-7 -26 0 -39 0 -39 C0 -39 7 -26 9 -9 C12 7 9 26 0 39Z" fill="#f1f6ff" stroke="#a6baff" stroke-width="1.4"/>
+    <path d="M0 -29 C-5 -22 -6 -15 -6 -10 L6 -10 C6 -15 5 -22 0 -29Z" fill="url(#planet)"/>
+    <circle cy="-3" r="5.5" fill="#16254d" stroke="#78e8ff" stroke-width="2"/>
+    <path d="M-8 12 L-21 27 L-7 24Z" fill="#9b75ff"/>
+    <path d="M8 12 L21 27 L7 24Z" fill="#ff75d5"/>
+    <path d="M-4 34 Q0 50 0 55 Q6 44 4 34Z" fill="url(#flame)">
+      <animate attributeName="d" values="M-4 34 Q0 50 0 55 Q6 44 4 34Z;M-4 34 Q-1 46 2 62 Q8 45 4 34Z;M-4 34 Q0 50 0 55 Q6 44 4 34Z" dur=".35s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-1 34 Q0 42 1 45" fill="none" stroke="#ffec9c" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="1;.3;1" dur=".3s" repeatCount="indefinite"/>
+    </path>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="2.2s" repeatCount="indefinite" additive="sum"/>
+  </g>
+  <!-- Comets dash across the edge to make the banner feel in motion -->
+  <g stroke-linecap="round">
+    <path d="M870 92h73" stroke="#68e7ff" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.12;.18;.25;1" dur="5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="-90 0;130 0" dur="5s" repeatCount="indefinite"/></path>
+    <path d="M934 201h54" stroke="#e48aff" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;1;0;0" keyTimes="0;.09;.17;1" dur="4.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="-120 0;120 0" dur="4.4s" repeatCount="indefinite"/></path>
+  </g>
+  <path d="M302 254 Q590 265 900 251 T1190 247" fill="none" stroke="url(#ring)" stroke-width="1.6" stroke-opacity=".62"/>
+  <circle cx="900" cy="251" r="3" fill="#70eaff"><animate attributeName="r" values="2;4;2" dur="1.6s" repeatCount="indefinite"/></circle>
+  <text x="1090" y="253" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" letter-spacing="1.2" fill="#a7b8ff">LAUNCHING BETTER SUPPORT</text>
+</g>
+</svg>
