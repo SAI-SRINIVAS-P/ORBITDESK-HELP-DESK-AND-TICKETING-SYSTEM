@@ -1,0 +1,47 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:-LocalOnly_StrongPassword_ChangeMe_123!}
+    ports: ["1433:1433"]
+    volumes: ["sqlserver_data:/var/opt/mssql"]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q 'SELECT 1' >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+  api:
+    build:
+      context: ./backend
+      dockerfile: src/HelpDesk.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=OrbitDesk;User Id=sa;Password=${SA_PASSWORD:-LocalOnly_StrongPassword_ChangeMe_123!};TrustServerCertificate=True;Encrypt=False"
+      Database__EnsureCreated: "true"
+      Jwt__Issuer: OrbitDesk
+      Jwt__Audience: OrbitDesk.Client
+      Jwt__Key: ${JWT_KEY:-local-only-signing-key-change-this-to-32-bytes-minimum-2026}
+      Seed__AdminEmail: ${ADMIN_EMAIL:-admin@helpdesk.local}
+      Seed__AdminPassword: ${ADMIN_PASSWORD:-LocalOnly_Admin_ChangeMe_123!}
+      Seed__AgentEmail: ${AGENT_EMAIL:-agent@helpdesk.local}
+      Seed__AgentPassword: ${AGENT_PASSWORD:-LocalOnly_Agent_ChangeMe_123!}
+      Smtp__Host: ${SMTP_HOST:-}
+      Smtp__Port: ${SMTP_PORT:-587}
+      Smtp__UseSsl: ${SMTP_USE_SSL:-false}
+      Smtp__Username: ${SMTP_USERNAME:-}
+      Smtp__Password: ${SMTP_PASSWORD:-}
+      Smtp__FromEmail: ${SMTP_FROM_EMAIL:-no-reply@helpdesk.local}
+      Smtp__FromName: ${SMTP_FROM_NAME:-OrbitDesk}
+    depends_on:
+      sqlserver: { condition: service_healthy }
+    ports: ["5080:8080"]
+  web:
+    build: { context: ./frontend, dockerfile: Dockerfile }
+    depends_on: [api]
+    ports: ["3000:80"]
+volumes:
+  sqlserver_data:

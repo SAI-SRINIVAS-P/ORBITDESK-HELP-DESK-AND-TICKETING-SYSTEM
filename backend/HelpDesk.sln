@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Api", "src\HelpDesk.Api\HelpDesk.Api.csproj", "{819E33E1-EBB7-4DA0-A7AA-4CAFB7831473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Api.Tests", "tests\HelpDesk.Api.Tests\HelpDesk.Api.Tests.csproj", "{C901E55A-4AE3-4A2B-9BF4-1CD1F7B49757}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{819E33E1-EBB7-4DA0-A7AA-4CAFB7831473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819E33E1-EBB7-4DA0-A7AA-4CAFB7831473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819E33E1-EBB7-4DA0-A7AA-4CAFB7831473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819E33E1-EBB7-4DA0-A7AA-4CAFB7831473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C901E55A-4AE3-4A2B-9BF4-1CD1F7B49757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C901E55A-4AE3-4A2B-9BF4-1CD1F7B49757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C901E55A-4AE3-4A2B-9BF4-1CD1F7B49757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C901E55A-4AE3-4A2B-9BF4-1CD1F7B49757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

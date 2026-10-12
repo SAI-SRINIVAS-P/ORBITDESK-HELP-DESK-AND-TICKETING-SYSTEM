@@ -1,0 +1,12 @@
+using HelpDesk.Api.Models;
+namespace HelpDesk.Api.DTOs;
+public sealed record RegisterRequest(string DisplayName, string Email, string Password);
+public sealed record LoginRequest(string Email, string Password, string? LoginAs = null);
+public sealed record DeleteAccountRequest(string Password, string Confirmation);
+public sealed record AuthResponse(string Token, DateTimeOffset ExpiresAtUtc, string UserId, string DisplayName, string Email, IReadOnlyList<string> Roles);
+public sealed record CreateTicketRequest(string Title, string Description, string Category, TicketPriority Priority);
+public sealed record UpdateTicketStatusRequest(TicketStatus Status, string? Note);
+public sealed record RespondToClosureRequest(bool Confirm, string? Note);
+public sealed record AddCommentRequest(string Body, bool IsInternal = false);
+public sealed record AssignTicketRequest(string? AgentId);
+public sealed record UpdateUserRoleRequest(string Role);
